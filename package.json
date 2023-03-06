@@ -1,5 +1,5 @@
 {
-  "name": "challenge5w7-front",
+  "name": "challenge7-front-jimena",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,22 +21,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "test:prod": "react-scripts test --watchAll --coverage --watchAll=false",
-    "test": "react-scripts test --coverage",
-    "sass": "sass sass:css --watch",
-    "prepare": "husky install"
+    "test": "react-scripts test --watchAll --coverage",
+    "test:prod": "react-scripts test --coverage --watchAll=false --passWithNoTests",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "jest": {
-    "coveragePathIgnorePatterns": [
-      "<rootDir>/src/reportWebVitals.ts",
-      "<rootDir>/src/index.ts"
     ]
   },
   "browserslist": {
@@ -50,10 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react-burger-menu": "^2.8.3",
-    "husky": "^8.0.0",
-    "jest-fetch-mock": "^3.0.3"
   }
 }
